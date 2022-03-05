@@ -2,10 +2,21 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_top-header') %> <%-
-    include('./parts/component/_c-btn',{text:'これはテストです', link:'#'}) %>
-    <%- include('./common/_footer') %> <% for (var i=0; i < 4; i++) { %> <%-
-    include('./parts/component/_c-btn',{text:'これはテストです', link:'#'}) %>
+    <%- include('./common/_top-header') %>
+    <%- include('./parts/component/_c-btn',{text:'これはテストです', link:'#'}) %>
+    <%- include('./common/_footer') %> 
+    <% for (var i=0; i < 4; i++) { %>
+    <%- include('./parts/component/_c-btn',{text:'詳しく見る', link:'#'}) %>
     <% } %>
+
+    //使いまわせよおおおおおおお！//
+    <%- include('./parts/component/_c-btn',{text:'初期のボタンだよ', link:'#'}) %>
+    <div class="l-center">
+      <%- include('./parts/component/_c-common-btn',{btnText:'詳しく見る', link:'#'}) %>
+    </div>
+    <%- include('./parts/component/_c-section-title',{sectionTitle:'ここにタイトルが入るよ！'}) %>
+    <%- include('./parts/component/_c-sub-title',{subTitle:'works'}) %>
+    <%- include('./parts/component/_c-text',{mainText:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+    
   </body>
 </html>
