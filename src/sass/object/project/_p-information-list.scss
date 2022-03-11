@@ -1,0 +1,41 @@
+.p-information-list:not(:last-child) {
+  margin-bottom: rem(32);
+}
+.p-information-list {
+  display: block;
+  transition: all 0.3s;
+  @include mq("tab") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-information-list__time {
+  font-family: $font-family-base;
+  font-size: rem(16);
+  line-height: 23px;
+  margin-right: rem(30);
+  color: $white;
+  @include mq("tab") {
+    margin-right: rem(48);
+  }
+}
+
+.p-information-list__category {
+  white-space: nowrap;
+  @include mq("tab") {
+    margin-right: rem(60);
+  }
+}
+
+.p-information-list__title {
+  color: $white;
+  padding-top: rem(16);
+  @include mq("tab") {
+    padding-top: 0;
+  }
+}
+
+.p-information-list:hover .p-information-list__title {
+  color: #f9f871;
+}
