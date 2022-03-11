@@ -1,0 +1,41 @@
+//コンポーネント化する？
+.p-404__wrapper {
+  text-align: center;
+  padding-top: rem(150);
+}
+
+.p-404__heading {
+  font-size: rem(40);
+  color: $category-color;
+  opacity: 0.3;
+  letter-spacing: rem(2);
+  line-height: rem(2);
+  @include mq("tab") {
+    font-size: rem(30);
+    line-height: rem(35);
+  }
+}
+
+.p-404__text {
+  font-size: rem(20);
+  padding-top: rem(80);
+  color: $text-color;
+  line-height: rem(29);
+  letter-spacing: rem(2);
+  @include mq("tab") {
+    font-size: rem(30);
+    line-height: rem(35);
+  }
+}
+
+.p-404__btn {
+  display: none;
+  margin: auto;
+  width: 100%;
+  max-width: rem(360);
+  text-align: center;
+  @include mq("tab") {
+    display: block;
+    margin-top: rem(80);
+  }
+}
