@@ -34,9 +34,9 @@
   }
 }
 .p-page-contact__input-area {
-    @include mq(tab){
-        width: calc(100% - 135px);
-    }
+  @include mq(tab) {
+    width: calc(100% - 135px);
+  }
 }
 .p-page-contact__row-question {
   @include mq(tab) {
