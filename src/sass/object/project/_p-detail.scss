@@ -1,4 +1,9 @@
 .p-detail {
+  @include mq(tab) {
+    max-width: rem(580);
+    width: 100%;
+    margin-left: rem(32);
+  }
 }
 .p-detail__title {
   font-size: rem(20);
@@ -8,6 +13,7 @@
   @include mq(tab) {
     font-size: rem(25);
     letter-spacing: 0.05em;
+    text-align: left;
   }
 }
 .p-detail__text {
@@ -15,4 +21,14 @@
   letter-spacing: 0.07em;
   line-height: 1.4;
   margin-top: rem(24);
+  @include mq(tab) {
+    line-height: 2.1875;
+  }
+}
+.p-detail__btn {
+  margin-top: rem(30);
+  @include mq(tab) {
+    margin-top: rem(48);
+    text-align: left;
+  }
 }

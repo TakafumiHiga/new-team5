@@ -13,12 +13,21 @@
   height: 100%;
   z-index: -1;
   top: 30%;
+  @include mq(tab) {
+    width: 70%;
+    height: 80%;
+    right: 0;
+  }
 }
 .p-top-works__title {
   text-align: center;
 }
 .p-top-works__content {
   margin-top: rem(48);
+  @include mq(tab) {
+    display: flex;
+    margin-top: rem(129);
+  }
 }
 .p-top-works__detail {
   margin-top: rem(24);

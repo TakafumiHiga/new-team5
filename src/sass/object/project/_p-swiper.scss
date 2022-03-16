@@ -4,6 +4,7 @@
   @include mq(tab) {
     max-width: rem(557);
     width: 100%;
+    margin: initial;
   }
 }
 .swiper-wrapper {
