@@ -1,0 +1,18 @@
+.p-detail {
+}
+.p-detail__title {
+  font-size: rem(20);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  text-align: center;
+  @include mq(tab) {
+    font-size: rem(25);
+    letter-spacing: 0.05em;
+  }
+}
+.p-detail__text {
+  font-size: rem(16);
+  letter-spacing: 0.07em;
+  line-height: 1.4;
+  margin-top: rem(24);
+}

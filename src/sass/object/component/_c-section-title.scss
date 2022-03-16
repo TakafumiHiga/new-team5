@@ -1,7 +1,10 @@
 .c-section-title {
   color: $white;
-  font-size: rem(30);
   letter-spacing: 0.02em;
   font-weight: 400;
   line-height: 1;
+  font-size: rem(20);
+  @include mq(tab) {
+    font-size: rem(30);
+  }
 }

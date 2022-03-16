@@ -1,26 +1,13 @@
 .p-top-content {
   @include mq(tab) {
     padding-top: rem(60);
-    padding-bottom: rem(60);
+    padding-bottom: rem(150);
   }
 }
 .p-top-content__title {
   text-align: center;
   position: relative;
 }
-/* .p-top-content__title::before {
-  position: absolute;
-  content: "content";
-  font-size: rem(110);
-  font-family: $font-family-second;
-  color: $backslash-color;
-  opacity: 0.27;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  line-height: 1;
-  top: -15%;
-  left: 10%;
-} */
 .p-top-content__link-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,7 +24,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%);
-  font-size: rem(25);
   line-height: 0.2em;
   white-space: nowrap;
+  font-size: rem(20);
+  @include mq(tab) {
+    font-size: rem(25);
+  }
 }

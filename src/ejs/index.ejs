@@ -30,9 +30,54 @@
           </div>
         </div>
       </section>
-      <section class="l-top-works-slider"></section>
-      <section class="l-top-overview"></section>
-      <section class="l-top-blog"></section>
+      <section class="l-top-works">
+        <div class="p-top-works">
+          <div class="l-inner">
+            <div class="p-top-works__title">
+              <%- include('./parts/component/_c-section-title',{sectionTitle:'制作実績'}) %>
+              <%- include('./parts/component/_c-sub-title',{subTitle:'works'}) %>
+            </div>
+            <div class="p-top-works__content">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <figure class="p-swiper__img">
+                      <img src="../images/top/top-slider-1.jpg" alt="">
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="p-swiper__img">
+                      <img src="../images/top/top-slider-2.jpg" alt="">
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure class="p-swiper__img">
+                      <img src="../images/top/top-slider-3.jpg" alt="">
+                    </figure>
+                  </div>
+                </div>
+                  <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="p-top-works__detail p-detail">
+                <h3 class="p-detail__title">メインタイトルが入ります。</h3>
+                <p class="p-detail__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-top-overview">
+
+      </section>
+      <section class="l-top-blog">
+
+      </section>
     </main>
 
     <!-- footer -->
