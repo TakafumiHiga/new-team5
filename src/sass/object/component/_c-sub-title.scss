@@ -1,8 +1,19 @@
 .c-sub-title {
-  font-size: rem(110);
   font-family: $font-family-second;
   color: $backslash-color;
   opacity: 0.27;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  line-height: 1;
+  text-align: center;
+  font-size: rem(50);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(tab){
+    top: -15%;
+    left: (200 / 1440) * 100vw;
+    font-size: rem(110);
+    transform: initial;
+  }
 }

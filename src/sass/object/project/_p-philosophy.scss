@@ -1,0 +1,111 @@
+.p-philosophy {
+  padding-top: rem(85);
+  padding-bottom: rem(120);
+  @include mq(tab) {
+    padding-top: rem(69);
+    padding-bottom: rem(150);
+  }
+}
+.p-philosophy__contents {
+  @include mq(tab) {
+    max-width: rem(1090);
+    width: 100%;
+    margin-top: rem(150);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.p-philosophy__top {
+  @include mq(tab) {
+    max-width: rem(536);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.p-philosophy__top-title {
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: rem(25);
+  font-weight: 400;
+}
+.p-philosophy__text-wrapper--top {
+  margin-top: rem(24);
+}
+.p-philosophy__text {
+  font-size: rem(16);
+  letter-spacing: 0.02em;
+  line-height: 2.1875;
+}
+.p-philosophy__content {
+  @include mq(tab) {
+    display: flex;
+  }
+}
+.p-philosophy__content + .p-philosophy__content {
+  margin-top: rem(48);
+  @include mq(tab) {
+    margin-top: rem(104);
+  }
+}
+.p-philosophy__content:nth-child(even) {
+  @include mq(tab) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.p-philosophy__img {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  position: relative;
+  @include mq(tab) {
+    max-width: rem(550);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.p-philosophy__img::before {
+  padding-top: 66.727%;
+  display: block;
+  content: "";
+}
+.p-philosophy__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-philosophy__items {
+  margin-top: rem(24);
+  @include mq(tab) {
+    max-width: rem(510);
+    width: 100%;
+    margin-top: rem(20);
+    margin-left: rem(30);
+  }
+}
+.p-philosophy__items--odd {
+  @include mq(tab) {
+    margin-left: 0;
+    margin-right: rem(30);
+  }
+}
+.p-philosophy__title {
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-align: center;
+  @include mq(tab) {
+    font-size: rem(25);
+    text-align: left;
+  }
+}
+.p-philosophy__text-wrapper {
+  margin-top: rem(24);
+  @include mq(tab) {
+    margin-top: initial;
+    font-size: rem(25);
+  }
+}

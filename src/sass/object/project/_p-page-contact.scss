@@ -1,0 +1,49 @@
+.p-page-contact {
+  @include mq(tab) {
+    padding-top: rem(115);
+  }
+}
+.p-page-contact__form {
+  @include mq(tab) {
+    max-width: rem(740);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(20);
+  }
+}
+.p-page-contact__dl {
+}
+.p-page-contact__row {
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-page-contact__row + .p-page-contact__row {
+  @include mq(tab) {
+    margin-top: rem(45);
+  }
+}
+.p-page-contact__form-title {
+  font-size: rem(14);
+  letter-spacing: 0.07em;
+  @include mq(tab) {
+    width: 142px;
+    text-align: right;
+    margin-right: rem(24);
+  }
+}
+.p-page-contact__input-area {
+  @include mq(tab) {
+    width: calc(100% - 135px);
+  }
+}
+.p-page-contact__row-question {
+  @include mq(tab) {
+    display: flex;
+    margin-top: rem(45);
+  }
+}
+.p-page-contact__form-button {
+  text-align: center;
+}
