@@ -1,0 +1,27 @@
+.p-card {
+}
+.p-card__detail {
+  background: $white;
+  padding: rem(16) rem(24);
+}
+.p-card__title {
+  color: $gray;
+}
+.p-card__text {
+  color: $gray;
+}
+.p-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.p-card__category {
+  background: $category-color;
+  font-size: rem(14);
+  padding: rem(3) rem(6);
+  letter-spacing: 0.1em;
+  color: $black;
+}
+.p-card__time {
+  color: $gray;
+}

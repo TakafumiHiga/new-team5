@@ -1,0 +1,52 @@
+.p-top-overview {
+    position: relative;
+  @include mq(tab) {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+  }
+}
+.p-top-overview::before {
+  position: absolute;
+  content: "";
+  background: $gray;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 30%;
+  @include mq(tab) {
+    width: 70%;
+    height: 80%;
+    left: 0;
+  }
+}
+.p-top-overview__title {
+  text-align: center;
+}
+.p-top-overview__content {
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: rem(130);
+  }
+}
+.p-top-overview__img {
+  max-width: rem(557);
+  width: 100%;
+  position: relative;
+}
+.p-top-overview__img::before {
+  padding-top: 69.838%;
+  display: block;
+  content: "";
+}
+.p-top-overview__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
