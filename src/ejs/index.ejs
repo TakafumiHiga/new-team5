@@ -63,7 +63,7 @@
                 <div class="swiper-pagination"></div>
               </div>
               <div class="p-top-works__detail p-detail">
-                <h3 class="p-detail__title">メインタイトルが入ります。</h3>
+                <h4 class="p-detail__title">メインタイトルが入ります。</h4>
                 <p class="p-detail__text">
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
@@ -76,10 +76,88 @@
         </div>
       </section>
       <section class="l-top-overview">
-
+        <div class="p-top-overview">
+          <div class="l-inner">
+            <div class="p-top-overview__title">
+              <%- include('./parts/component/_c-section-title',{sectionTitle:'企業概要'}) %>
+              <%- include('./parts/component/_c-sub-title',{subTitle:'overview'}) %>
+            </div>
+            <div class="p-top-overview__content">
+              <!-- Slider main container -->
+              <figure class="p-top-overview__img">
+                <img src="../images/top/overview-img.jpg" alt="">
+              </figure>
+              <div class="p-top-overview__detail p-detail">
+                <h4 class="p-detail__title">メインタイトルが入ります。</h4>
+                <p class="p-detail__text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+                <div class="p-detail__btn">
+                  <%- include('./parts/component/_c-common-btn',{btnText:'詳しく見る', link:'#'}) %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="l-top-blog">
-
+        <div class="l-inner">
+          <div class="p-top-blog">
+            <div class="p-top-blog__title">
+              <%- include('./parts/component/_c-section-title',{sectionTitle:'ブログ'}) %>
+              <%- include('./parts/component/_c-sub-title',{subTitle:'blog'}) %>
+            </div>
+            <div class="p-top-blog__content">
+              <ul class="p-cards">
+                <li class="p-cards__list">
+                  <a href="#" class="p-card">
+                    <figure class="p-card__img">
+                      <img src="../images/blog/blog-img1.jpg" alt="">
+                    </figure>
+                    <div class="p-card__detail">
+                      <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
+                      <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                      <div class="p-card__meta">
+                        <span class="p-card__category">カテゴリ</span>
+                        <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="p-cards__list">
+                  <a href="#" class="p-card">
+                    <figure class="p-card__img">
+                      <img src="../images/blog/blog-img2.jpg" alt="">
+                    </figure>
+                    <div class="p-card__detail">
+                      <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
+                      <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                      <div class="p-card__meta">
+                        <span class="p-card__category">カテゴリ</span>
+                        <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="p-cards__list">
+                  <a href="#" class="p-card">
+                    <figure class="p-card__img">
+                      <img src="../images/blog/blog-img3.jpg" alt="">
+                    </figure>
+                    <div class="p-card__detail">
+                      <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
+                      <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                      <div class="p-card__meta">
+                        <span class="p-card__category">カテゴリ</span>
+                        <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

@@ -1,0 +1,17 @@
+.p-cards {
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.p-cards__list {
+  @include mq(tab) {
+    margin-left: rem(25);
+    width: calc(33.3333% - 25px * 2 / 3);
+  }
+}
+.p-cards__list:first-child {
+  @include mq(tab) {
+    margin-left: 0;
+  }
+}

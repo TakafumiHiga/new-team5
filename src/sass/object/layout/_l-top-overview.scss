@@ -1,0 +1,5 @@
+.l-top-overview {
+  @include mq(tab) {
+    margin-top: rem(150);
+  }
+}

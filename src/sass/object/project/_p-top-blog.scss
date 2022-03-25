@@ -1,0 +1,10 @@
+.p-top-blog {
+}
+.p-top-blog__title {
+  text-align: center;
+}
+.p-top-blog__content {
+  @include mq(tab) {
+    margin-top: rem(48);
+  }
+}
