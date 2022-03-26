@@ -101,66 +101,94 @@
         </div>
       </section>
       <section class="l-top-blog">
-        <div class="l-inner">
           <div class="p-top-blog">
-            <div class="p-top-blog__title">
-              <%- include('./parts/component/_c-section-title',{sectionTitle:'ブログ'}) %>
-              <%- include('./parts/component/_c-sub-title',{subTitle:'blog'}) %>
+            <div class="l-inner">
+              <div class="p-top-blog__title">
+                <%- include('./parts/component/_c-section-title',{sectionTitle:'ブログ'}) %>
+                <%- include('./parts/component/_c-sub-title',{subTitle:'blog'}) %>
+              </div>
+              <div class="p-top-blog__content">
+                <ul class="p-cards">
+                  <li class="p-cards__list">
+                    <a href="#" class="p-card">
+                      <figure class="p-card__img">
+                        <img src="../images/blog/blog-img1.jpg" alt="">
+                      </figure>
+                      <div class="p-card__detail">
+                        <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
+                        <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                        <div class="p-card__meta">
+                          <span class="p-card__category">カテゴリ</span>
+                          <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="p-cards__list">
+                    <a href="#" class="p-card">
+                      <figure class="p-card__img">
+                        <img src="../images/blog/blog-img2.jpg" alt="">
+                      </figure>
+                      <div class="p-card__detail">
+                        <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
+                        <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                        <div class="p-card__meta">
+                          <span class="p-card__category">カテゴリ</span>
+                          <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="p-cards__list">
+                    <a href="#" class="p-card">
+                      <figure class="p-card__img">
+                        <img src="../images/blog/blog-img3.jpg" alt="">
+                      </figure>
+                      <div class="p-card__detail">
+                        <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
+                        <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+                        <div class="p-card__meta">
+                          <span class="p-card__category">カテゴリ</span>
+                          <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="p-top-blog__btn">
+                  <%- include('./parts/component/_c-common-btn',{btnText:'詳しく見る', link:'#'}) %>
+                </div>
+              </div>
             </div>
-            <div class="p-top-blog__content">
-              <ul class="p-cards">
-                <li class="p-cards__list">
-                  <a href="#" class="p-card">
-                    <figure class="p-card__img">
-                      <img src="../images/blog/blog-img1.jpg" alt="">
-                    </figure>
-                    <div class="p-card__detail">
-                      <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
-                      <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                      <div class="p-card__meta">
-                        <span class="p-card__category">カテゴリ</span>
-                        <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="p-cards__list">
-                  <a href="#" class="p-card">
-                    <figure class="p-card__img">
-                      <img src="../images/blog/blog-img2.jpg" alt="">
-                    </figure>
-                    <div class="p-card__detail">
-                      <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
-                      <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                      <div class="p-card__meta">
-                        <span class="p-card__category">カテゴリ</span>
-                        <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="p-cards__list">
-                  <a href="#" class="p-card">
-                    <figure class="p-card__img">
-                      <img src="../images/blog/blog-img3.jpg" alt="">
-                    </figure>
-                    <div class="p-card__detail">
-                      <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
-                      <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                      <div class="p-card__meta">
-                        <span class="p-card__category">カテゴリ</span>
-                        <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+          </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+      <div class="p-footer">
+        <div class="l-inner">
+          <div class="p-footer__title">
+            <%- include('./parts/component/_c-section-title',{sectionTitle:'お問い合わせ'}) %>
+            <%- include('./parts/component/_c-sub-title',{subTitle:'contact'}) %>
+          </div>
+          <div class="p-footer__content">
+            <div class="p-footer__contact">
+              <div class="p-footer__text">
+                <p class="c-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              </div>
+              <div class="p-footer__btn">
+                <%- include('./parts/component/_c-common-btn',{btnText:'お問い合わせへ', link:'#'}) %>
+              </div>
+            </div>
+            <div class="p-footer__nav">
+              
+            </div>
+            <div class="p-footer__small">
+              <small></small>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
+      </div>
+    </footer>
     <!-- footer -->
   </body>
 </html>
