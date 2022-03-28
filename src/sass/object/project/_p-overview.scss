@@ -1,0 +1,59 @@
+.p-overview {
+}
+.p-overview__content {
+  @include mq(tab) {
+    padding-top: rem(147);
+  }
+}
+.p-overview__detail {
+}
+.p-overview__row {
+  display: flex;
+  @include mq(tab) {
+    padding-top: rem(28);
+    padding-bottom: rem(28);
+    border-bottom: 1px solid $white;
+  }
+}
+.p-overview__row + .p-overview__row {
+  margin-top: rem(24);
+}
+.p-overview__title {
+  width: rem(66);
+}
+.p-overview__text-wrapper {
+  margin-left: rem(53);
+  width: calc(100% - 120px);
+  @include mq(tab) {
+    margin-left: rem(88);
+    width: calc(100% - 154px);
+  }
+}
+.p-overview__text {
+  letter-spacing: 0.01em;
+}
+.p-overview__map {
+  width: 100%;
+  position: relative;
+  margin-top: rem(24);
+  @include mq(tab) {
+    margin-top: rem(80);
+  }
+}
+.p-overview__map::before {
+  display: block;
+  content: "";
+  @include mq(tab) {
+    padding-top: 33.363%;
+  }
+}
+.p-overview__map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
