@@ -165,7 +165,7 @@
     </main>
     <footer class="l-footer">
       <div class="p-footer">
-        <div class="l-inner">
+        <div class="l-footer__inner">
           <div class="p-footer__title">
             <%- include('./parts/component/_c-section-title',{sectionTitle:'お問い合わせ'}) %>
             <%- include('./parts/component/_c-sub-title',{subTitle:'contact'}) %>
@@ -179,11 +179,33 @@
                 <%- include('./parts/component/_c-common-btn',{btnText:'お問い合わせへ', link:'#'}) %>
               </div>
             </div>
-            <div class="p-footer__nav">
-              
+            <div class="p-footer__navigation">
+              <a href="./index.ejs" class="p-footer__img">
+                <img src="../images/common/logo.svg" alt="">
+              </a>
+              <ul class="p-footer__lists">
+                <li class="p-footer__list">
+                  <a href="#">お知らせ</a>
+                </li>
+                <li class="p-footer__list">
+                  <a href="#">事業内容</a>
+                </li>
+                <li class="p-footer__list">
+                  <a href="#">制作実績</a>
+                </li>
+                <li class="p-footer__list">
+                  <a href="#">企業概要</a>
+                </li>
+                <li class="p-footer__list">
+                  <a href="#">自社メディア</a>
+                </li>
+                <li class="p-footer__list">
+                  <a href="#">お問い合わせ</a>
+                </li>
+              </ul>
             </div>
             <div class="p-footer__small">
-              <small></small>
+              <small>&copy; 2021 CodeUps Inc.</small>
             </div>
           </div>
         </div>

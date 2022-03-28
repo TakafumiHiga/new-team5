@@ -1,4 +1,8 @@
 .p-footer {
+  @include mq(tab) {
+    padding-top: rem(148);
+    padding-bottom: rem(32);
+  }
 }
 .p-footer__content {
 }
@@ -11,4 +15,38 @@
 .p-footer__btn {
   margin-top: rem(60);
   text-align: center;
+}
+.p-footer__navigation {
+  @include mq(tab) {
+    display: flex;
+    padding-top: rem(32);
+  }
+}
+.p-footer__img {
+  width: rem(70);
+}
+.p-footer__lists {
+  @include mq(tab) {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+.p-footer__list + .p-footer__list {
+  @include mq(tab) {
+    margin-left: rem(32);
+  }
+}
+.p-footer__list a {
+  letter-spacing: 0.02em;
+}
+.p-footer__small {
+  text-align: center;
+  @include mq(tab) {
+    margin-top: rem(60);
+  }
+}
+.p-footer__small small {
+  letter-spacing: 0.012em;
+  font-size: rem(15);
 }
