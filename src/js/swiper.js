@@ -21,3 +21,13 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  var slider1 = new Swiper ('.slider1', {
+    loop: true,
+    effect: 'fade',
+    speed: 2000,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+});
