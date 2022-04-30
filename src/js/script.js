@@ -33,11 +33,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
+  jQuery('.p-drawer-icon').on('click',function(e){
+    e.preventDefault();
+    jQuery('.p-drawer-icon').toggleClass('is-active');
+    jQuery('.p-drawer-content').toggleClass('is-active');
+    jQuery('.p-drawer-background').toggleClass('is-active');
+    return false;
   });
-
+  jQuery('.p-drawer-background').on('click',function(e){
+    e.preventDefault();
+    jQuery('.p-drawer-icon').toggleClass('is-active');
+    jQuery('.p-drawer-content').toggleClass('is-active');
+    jQuery('.p-drawer-background').toggleClass('is-active');
+    return false;
+  });
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
@@ -48,7 +57,4 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
-
-
 });
