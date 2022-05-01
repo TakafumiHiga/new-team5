@@ -9,28 +9,30 @@
           <div class="p-header__content">
             <h1 class="p-header__logo">
               <a href="#" class="p-header__home-link">
-                <img src="../images/top/logo.svg" alt="CodeUps">
+                <img src="../images/top/logo.svg" alt="CodeUps" />
               </a>
             </h1>
             <nav class="p-header__nav">
               <ul class="p-header__lists">
                 <li class="p-header__list">
-                  <a href="" class="p-header__link">お知らせ</a>
+                  <a href="nformation.html" class="p-header__link">お知らせ</a>
                 </li>
                 <li class="p-header__list">
-                  <a href="" class="p-header__link">事業内容</a>
+                  <a href="philosophy.html" class="p-header__link">事業内容</a>
                 </li>
                 <li class="p-header__list">
-                  <a href="" class="p-header__link">制作実績</a>
+                  <a href="production.html" class="p-header__link">制作実績</a>
                 </li>
                 <li class="p-header__list">
-                  <a href="" class="p-header__link">企業概要</a>
+                  <a href="overview.html" class="p-header__link">企業概要</a>
                 </li>
                 <li class="p-header__list">
-                  <a href="" class="p-header__link">ブログ</a>
+                  <a href="blog.html" class="p-header__link">ブログ</a>
                 </li>
                 <li class="p-header__list">
-                  <a href="#" class="p-header__contact">お問い合わせ</a>
+                  <a href="contact.html" class="p-header__contact"
+                    >お問い合わせ</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -44,12 +46,24 @@
             <div class="p-drawer-content">
               <div class="p-drawer-content__items">
                 <div class="p-drawer-content__item"><a href="#">トップ</a></div>
-                <div class="p-drawer-content__item"><a href="#">お知らせ</a></div>
-                <div class="p-drawer-content__item"><a href="#">事業内容</a></div>
-                <div class="p-drawer-content__item"><a href="#">制作実績</a></div>
-                <div class="p-drawer-content__item"><a href="#">企業概要</a></div>
-                <div class="p-drawer-content__item"><a href="#">ブログ</a></div>
-                <div class="p-drawer-content__item"><a href="#">お問い合わせ</a></div>
+                <div class="p-drawer-content__item">
+                  <a href="nformation.html">お知らせ</a>
+                </div>
+                <div class="p-drawer-content__item">
+                  <a href="philosophy.html">事業内容</a>
+                </div>
+                <div class="p-drawer-content__item">
+                  <a href="production.html">制作実績</a>
+                </div>
+                <div class="p-drawer-content__item">
+                  <a href="overview.html">企業概要</a>
+                </div>
+                <div class="p-drawer-content__item">
+                  <a href="blog.html">ブログ</a>
+                </div>
+                <div class="p-drawer-content__item">
+                  <a href="contact.html">お問い合わせ</a>
+                </div>
               </div>
             </div>
             <div class="p-drawer-background"></div>
@@ -65,17 +79,17 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slide-img">
-                    <img src="../images/top/mv1.jpg" alt="img1">
+                    <img src="../images/top/mv1.jpg" alt="img1" />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img">
-                    <img src="../images/top/mv2.jpg" alt="img2">
+                    <img src="../images/top/mv2.jpg" alt="img2" />
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="slide-img">
-                    <img src="../images/top/mv3.jpg" alt="img3">
+                    <img src="../images/top/mv3.jpg" alt="img3" />
                   </div>
                 </div>
               </div>
@@ -90,8 +104,10 @@
         <div class="p-top-works">
           <div class="l-inner">
             <div class="p-top-works__title">
-              <%- include('./parts/component/_c-section-title',{sectionTitle:'制作実績'}) %>
-              <%- include('./parts/component/_c-sub-title',{subTitle:'works'}) %>
+              <%-
+              include('./parts/component/_c-section-title',{sectionTitle:'制作実績'})
+              %> <%-
+              include('./parts/component/_c-sub-title',{subTitle:'works'}) %>
             </div>
             <div class="p-top-works__content">
               <!-- Slider main container -->
@@ -101,21 +117,21 @@
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <figure class="p-works-swiper__img">
-                      <img src="../images/top/top-slider-1.jpg" alt="">
+                      <img src="../images/top/top-slider-1.jpg" alt="" />
                     </figure>
                   </div>
                   <div class="swiper-slide">
                     <figure class="p-works-swiper__img">
-                      <img src="../images/top/top-slider-2.jpg" alt="">
+                      <img src="../images/top/top-slider-2.jpg" alt="" />
                     </figure>
                   </div>
                   <div class="swiper-slide">
                     <figure class="p-works-swiper__img">
-                      <img src="../images/top/top-slider-3.jpg" alt="">
+                      <img src="../images/top/top-slider-3.jpg" alt="" />
                     </figure>
                   </div>
                 </div>
-                  <!-- If we need pagination -->
+                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
               </div>
               <div class="p-top-works__detail p-detail">
@@ -124,7 +140,9 @@
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
                 <div class="p-detail__btn">
-                  <%- include('./parts/component/_c-common-btn',{btnText:'詳しく見る', link:'#'}) %>
+                  <%-
+                  include('./parts/component/_c-common-btn',{btnText:'詳しく見る',
+                  link:'#'}) %>
                 </div>
               </div>
             </div>
@@ -135,13 +153,15 @@
         <div class="p-top-overview">
           <div class="l-inner">
             <div class="p-top-overview__title">
-              <%- include('./parts/component/_c-section-title',{sectionTitle:'企業概要'}) %>
-              <%- include('./parts/component/_c-sub-title',{subTitle:'overview'}) %>
+              <%-
+              include('./parts/component/_c-section-title',{sectionTitle:'企業概要'})
+              %> <%-
+              include('./parts/component/_c-sub-title',{subTitle:'overview'}) %>
             </div>
             <div class="p-top-overview__content">
               <!-- Slider main container -->
               <figure class="p-top-overview__img">
-                <img src="../images/top/overview-img.jpg" alt="">
+                <img src="../images/top/overview-img.jpg" alt="" />
               </figure>
               <div class="p-top-overview__detail p-detail">
                 <h4 class="p-detail__title">メインタイトルが入ります。</h4>
@@ -149,7 +169,9 @@
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
                 <div class="p-detail__btn">
-                  <%- include('./parts/component/_c-common-btn',{btnText:'詳しく見る', link:'#'}) %>
+                  <%-
+                  include('./parts/component/_c-common-btn',{btnText:'詳しく見る',
+                  link:'#'}) %>
                 </div>
               </div>
             </div>
@@ -157,87 +179,124 @@
         </div>
       </section>
       <section class="l-top-blog">
-          <div class="p-top-blog">
-            <div class="l-inner">
-              <div class="p-top-blog__title">
-                <%- include('./parts/component/_c-section-title',{sectionTitle:'ブログ'}) %>
-                <%- include('./parts/component/_c-sub-title',{subTitle:'blog'}) %>
-              </div>
-              <div class="p-top-blog__content">
-                <ul class="p-cards">
-                  <li class="p-cards__list">
-                    <a href="#" class="p-card">
-                      <figure class="p-card__img">
-                        <img src="../images/blog/blog-img1.jpg" alt="">
-                      </figure>
-                      <div class="p-card__detail">
-                        <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
-                        <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                        <div class="p-card__meta">
-                          <span class="p-card__category">カテゴリ</span>
-                          <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
-                        </div>
+        <div class="p-top-blog">
+          <div class="l-inner">
+            <div class="p-top-blog__title">
+              <%-
+              include('./parts/component/_c-section-title',{sectionTitle:'ブログ'})
+              %> <%- include('./parts/component/_c-sub-title',{subTitle:'blog'})
+              %>
+            </div>
+            <div class="p-top-blog__content">
+              <ul class="p-cards">
+                <li class="p-cards__list">
+                  <a href="#" class="p-card">
+                    <figure class="p-card__img">
+                      <img src="../images/blog/blog-img1.jpg" alt="" />
+                    </figure>
+                    <div class="p-card__detail">
+                      <h4 class="p-card__title">
+                        タイトルが入ります。タイトルが入ります。
+                      </h4>
+                      <p class="p-card__text">
+                        説明文が入ります。説明文が入ります。説明文が入ります。
+                      </p>
+                      <div class="p-card__meta">
+                        <span class="p-card__category">カテゴリ</span>
+                        <time
+                          class="p-card__time"
+                          datetime="”2021-7-20”"
+                          itemprop="”modified”"
+                          >2021.07.20</time
+                        >
                       </div>
-                    </a>
-                  </li>
-                  <li class="p-cards__list">
-                    <a href="#" class="p-card">
-                      <figure class="p-card__img">
-                        <img src="../images/blog/blog-img2.jpg" alt="">
-                      </figure>
-                      <div class="p-card__detail">
-                        <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
-                        <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                        <div class="p-card__meta">
-                          <span class="p-card__category">カテゴリ</span>
-                          <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
-                        </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="p-cards__list">
+                  <a href="#" class="p-card">
+                    <figure class="p-card__img">
+                      <img src="../images/blog/blog-img2.jpg" alt="" />
+                    </figure>
+                    <div class="p-card__detail">
+                      <h4 class="p-card__title">
+                        タイトルが入ります。タイトルが入ります。
+                      </h4>
+                      <p class="p-card__text">
+                        説明文が入ります。説明文が入ります。説明文が入ります。
+                      </p>
+                      <div class="p-card__meta">
+                        <span class="p-card__category">カテゴリ</span>
+                        <time
+                          class="p-card__time"
+                          datetime="”2021-7-20”"
+                          itemprop="”modified”"
+                          >2021.07.20</time
+                        >
                       </div>
-                    </a>
-                  </li>
-                  <li class="p-cards__list">
-                    <a href="#" class="p-card">
-                      <figure class="p-card__img">
-                        <img src="../images/blog/blog-img3.jpg" alt="">
-                      </figure>
-                      <div class="p-card__detail">
-                        <h4 class="p-card__title">タイトルが入ります。タイトルが入ります。</h4>
-                        <p class="p-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-                        <div class="p-card__meta">
-                          <span class="p-card__category">カテゴリ</span>
-                          <time class="p-card__time" datetime=”2021-7-20” itemprop=”modified”>2021.07.20</time>
-                        </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="p-cards__list">
+                  <a href="#" class="p-card">
+                    <figure class="p-card__img">
+                      <img src="../images/blog/blog-img3.jpg" alt="" />
+                    </figure>
+                    <div class="p-card__detail">
+                      <h4 class="p-card__title">
+                        タイトルが入ります。タイトルが入ります。
+                      </h4>
+                      <p class="p-card__text">
+                        説明文が入ります。説明文が入ります。説明文が入ります。
+                      </p>
+                      <div class="p-card__meta">
+                        <span class="p-card__category">カテゴリ</span>
+                        <time
+                          class="p-card__time"
+                          datetime="”2021-7-20”"
+                          itemprop="”modified”"
+                          >2021.07.20</time
+                        >
                       </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="p-top-blog__btn">
-                  <%- include('./parts/component/_c-common-btn',{btnText:'詳しく見る', link:'#'}) %>
-                </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="p-top-blog__btn">
+                <%-
+                include('./parts/component/_c-common-btn',{btnText:'詳しく見る',
+                link:'#'}) %>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </main>
     <footer class="l-footer">
       <div class="p-footer">
         <div class="l-footer__inner">
           <div class="p-footer__title">
-            <%- include('./parts/component/_c-section-title',{sectionTitle:'お問い合わせ'}) %>
-            <%- include('./parts/component/_c-sub-title',{subTitle:'contact'}) %>
+            <%-
+            include('./parts/component/_c-section-title',{sectionTitle:'お問い合わせ'})
+            %> <%-
+            include('./parts/component/_c-sub-title',{subTitle:'contact'}) %>
           </div>
           <div class="p-footer__content">
             <div class="p-footer__contact">
               <div class="p-footer__text">
-                <p class="c-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <p class="c-text">
+                  テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
               </div>
               <div class="p-footer__btn">
-                <%- include('./parts/component/_c-common-btn',{btnText:'お問い合わせへ', link:'#'}) %>
+                <%-
+                include('./parts/component/_c-common-btn',{btnText:'お問い合わせへ',
+                link:'#'}) %>
               </div>
             </div>
             <div class="p-footer__navigation">
               <a href="./index.ejs" class="p-footer__img">
-                <img src="../images/common/logo.svg" alt="">
+                <img src="../images/common/logo.svg" alt="" />
               </a>
               <ul class="p-footer__lists">
                 <li class="p-footer__list">
