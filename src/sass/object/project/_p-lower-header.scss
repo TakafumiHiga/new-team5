@@ -1,0 +1,34 @@
+.p-lower-header {
+  background-image: url(./../images/news/news-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 26.5625rem;
+  position: relative;
+}
+
+.p-lower-header::before {
+  content: "";
+  background-color: rgba(17, 17, 17, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.p-lower-header h1 {
+  color: #fff;
+  font-size: rem(30);
+  font-weight: 700;
+  left: 50%;
+  letter-spacing: 0.05em;
+  position: absolute;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  @include mq ('tab'){
+    font-size: rem(35);
+  }
+}
+
+
