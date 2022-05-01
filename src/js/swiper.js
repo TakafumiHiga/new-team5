@@ -1,23 +1,21 @@
+'use strict';
 
-
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
+  var slider1 = new Swiper ('.js-mv-swiper', {
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+    effect: 'fade',
+    speed: 2000,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+});
+
+  var slider2 = new Swiper ('.js-works-swiper', {
+    loop: true,
+    effect: 'horizontal',
+    speed: 2000,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+});

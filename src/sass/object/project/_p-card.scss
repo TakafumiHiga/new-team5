@@ -6,14 +6,21 @@
 }
 .p-card__title {
   color: $gray;
+  font-size: rem(18);
+  letter-spacing: 0.01em;
 }
 .p-card__text {
   color: $gray;
+  font-size: rem(14);
+  letter-spacing: 0.01em;
+  line-height: 1.8571;
+  margin-top: rem(8);
 }
 .p-card__meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: rem(8);
 }
 .p-card__category {
   background: $category-color;

@@ -1,4 +1,7 @@
 .p-top-blog {
+  @include mq(tab) {
+    padding-bottom: rem(150);
+  }
 }
 .p-top-blog__title {
   text-align: center;
@@ -7,4 +10,8 @@
   @include mq(tab) {
     margin-top: rem(48);
   }
+}
+.p-top-blog__btn {
+  margin-top: rem(48);
+  text-align: center;
 }

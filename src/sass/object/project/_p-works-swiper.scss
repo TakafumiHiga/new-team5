@@ -1,4 +1,4 @@
-.swiper {
+.p-works-swiper {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
   @include mq(tab) {
@@ -7,20 +7,17 @@
     margin: initial;
   }
 }
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.p-swiper__img {
+
+.p-works-swiper__img {
   width: 100%;
   position: relative;
 }
-.p-swiper__img::before {
+.p-works-swiper__img::before {
   padding-top: 69.6%;
   display: block;
   content: "";
 }
-.p-swiper__img img {
+.p-works-swiper__img img {
   position: absolute;
   width: 100%;
   height: 100%;

@@ -15,3 +15,9 @@
     margin-left: 0;
   }
 }
+.p-cards__list + .p-cards__list {
+  margin-top: rem(32);
+  @include mq(tab) {
+    margin-top: initial;
+  }
+}
